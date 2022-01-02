@@ -88,6 +88,7 @@ trio==0.19.0
 trio-websocket==0.9.2
 tzdata==2021.5
 urllib3==1.26.7
+version==pywin32==302
 wcwidth==0.2.5
 webencodings==0.5.1
 whitenoise==5.3.0
