@@ -9,5 +9,7 @@ urlpatterns = [
     path("services", views.services, name='Our Services'),
     path("req", views.req, name="Our Requirements"),
     path("vacancy" , views.vac, name="Vacancy"),
-    path("min", views.min, name="min")
+    path("min", views.min, name="min"),
+    path("login", views.loginuser, name="login"),
+    path("logout", views.logoutuser, name="logout")
 ]
