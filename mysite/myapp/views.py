@@ -78,4 +78,7 @@ def rrh(request):
 def antena(request):
     return render(request , "antena.html")
 
+def mrn(request):
+    return render(request , "mrn.html")
+
 

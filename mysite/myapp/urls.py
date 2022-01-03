@@ -18,5 +18,6 @@ urlpatterns = [
     path("esc", views.esc, name="esc"),
     path("trans", views.trans, name="trans"),
     path("rrh", views.rrh, name="rrh"),
-    path("antena", views.antena, name="antena")
+    path("antena", views.antena, name="antena"),
+    path("mrn", views.mrn, name="mrn")
 ]
