@@ -56,3 +56,26 @@ def vac(request):
     return render(request , "vaca.html")
 def min(request):
     return render(request , "min.html")
+
+def meterbox(request):
+    return render(request , "meterbox.html")
+
+def ubr(request):
+    return render(request , "ubr.html")
+
+def wifi(request):
+    return render(request , "wifi.html")
+
+def esc(request):
+    return render(request , "esc.html")
+
+def trans(request):
+    return render(request , "trans.html")
+
+def rrh(request):
+    return render(request , "rrh.html")
+
+def antena(request):
+    return render(request , "antena.html")
+
+

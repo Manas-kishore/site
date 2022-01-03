@@ -11,5 +11,12 @@ urlpatterns = [
     path("vacancy" , views.vac, name="Vacancy"),
     path("min", views.min, name="min"),
     path("login", views.loginuser, name="login"),
-    path("logout", views.logoutuser, name="logout")
+    path("logout", views.logoutuser, name="logout"),
+    path("meterbox", views.meterbox, name="meterbox"),
+    path("ubr", views.ubr, name="ubr"),
+    path("wifi", views.wifi, name="wifi"),
+    path("esc", views.esc, name="esc"),
+    path("trans", views.trans, name="trans"),
+    path("rrh", views.rrh, name="rrh"),
+    path("antena", views.antena, name="antena")
 ]
