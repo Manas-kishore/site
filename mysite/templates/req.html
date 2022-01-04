@@ -1,5 +1,87 @@
 {% extends 'base.html' %}
 {% block title %}Our Requirements{% endblock title %}
+<style>
+head,
+    body {
+        background-color: lightcyan
+    }
+    
+    .card {
+        cursor: pointer
+    }
+    
+    .hd {
+        font-size: 25px;
+        font-weight: 550
+    }
+    
+    .card.hover,
+    .card:hover {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, .2)
+    }
+    
+    .img {
+        margin-bottom: 35px;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222)
+    }
+    
+    .card-title {
+        font-weight: 600
+    }
+    
+    button.focus,
+    button:focus {
+        outline: 0;
+        box-shadow: none !important
+    }
+    
+    .ft {
+        margin-top: 25px
+    }
+    
+    .chk {
+        margin-bottom: 5px
+    }
+    
+    .rck {
+        margin-top: 20px;
+        padding-bottom: 15px
+    }
+</style>
 {% block body %}
-this is requirements page
+<div class='container-fluid mx-auto mt-5 mb-5 col-12' style="text-align: center">
+    <div class="hd"><u>OUR SERVICES</u></div>
+    <div class="row" style="justify-content: center">
+        <div class="card col-md-3 col-12">
+            <div class="card-content">
+                <div class="card-body"> <img class="img" src="/static/img/tw.png" width="70" height="70">
+                    <div class="shadow"></div>
+                    <div class="card-title"> Tele-Communica </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-3 col-12 ml-2">
+            <div class="card-content">
+                <div class="card-body"> <img class="img" src="/static/img/cw.png" width="70" height="70">
+                    <div class="card-title"> Civil Work </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-md-3 col-12 ml-2">
+            <div class="card-content">
+                <div class="card-body"> <img class="img rck" src="/static/img/ti.png" width="70" height="70" >
+                    <div class="card-title"> Telecom Infrastructure </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ft">
+        <p class="chk"><small class="text-muted">Still not sure?</small></p>
+        <a href="/contact">
+            <div class="btn btn-primary">Contact Us >>
+            </div>
+        </a>
+    </div>
+</div>
 {% endblock body %}
