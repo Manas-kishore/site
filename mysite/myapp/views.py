@@ -82,10 +82,3 @@ def antena(request):
 def mrn(request):
     return render(request , "mrn.html")
 
-def upload(request):
-    if request.method == "POST":
-        uploaded_file = request.FILES['document']
-        fs = FileSystemStorage()
-        fs.save(uploaded_file.name , uploaded_file)
-        messages.success(request, 'Successfully Submitted!')
-    return render(request, "upload.html")

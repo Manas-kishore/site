@@ -20,5 +20,4 @@ urlpatterns = [
     path("rrh", views.rrh, name="rrh"),
     path("antena", views.antena, name="antena"),
     path("mrn", views.mrn, name="mrn"),
-    path("upload", views.upload, name="upload"),
 ]
