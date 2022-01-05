@@ -5,6 +5,7 @@ from myapp.models import Contact
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import logout, authenticate, login
+from django.core.files.storage import FileSystemStorage
 
 # Create your views here.
 def index(request):
@@ -81,4 +82,10 @@ def antena(request):
 def mrn(request):
     return render(request , "mrn.html")
 
-
+def upload(request):
+    if request.method == "POST":
+        uploaded_file = request.FILES['document']
+        fs = FileSystemStorage()
+        fs.save(uploaded_file.name , uploaded_file)
+        messages.success(request, 'Successfully Submitted!')
+    return render(request, "upload.html")
