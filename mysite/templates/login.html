@@ -93,10 +93,10 @@ body {
 <form action="/login" method="post">
   {% csrf_token %}
   <img class="mb-4" src="/static/img/lg.png" alt="" width="300" height="300">
-  <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+  <h1 class="h3 mb-3 fw-normal">Please Sign In</h1>
 
   <div class="form-floating">
-    <input type="text" class="form-control" name="username"id="username" placeholder="john">
+    <input type="text" class="form-control" name="username"id="username" placeholder="Name">
     <label for="floatingInput">Name</label>
   </div>
 
@@ -115,7 +115,7 @@ body {
       <input type="checkbox" value="remember-me"> Remember me
     </label>
   </div>
-  <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+  <button class="w-100 btn btn-lg btn-secondary" type="submit">Sign in</button>
   <p class="mt-5 mb-3 text-muted">
     <h4>Ms Enterprises
       <br>All Rights Reserved</h4>
