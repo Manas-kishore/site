@@ -90,8 +90,11 @@ body {
 <body class="text-center">
   
 <main class="form-signin">
- {% if form.errors %}
-    <p>username or password not correct</p>
+ {% if username.errors %}
+    <p>username not correct</p>
+ {% endif %}
+  {% if password.errors %}
+    <p>password not correct</p>
 {% endif %}
 <form action="/login" method="post">
   {% csrf_token %}
