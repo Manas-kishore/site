@@ -90,12 +90,7 @@ body {
 <body class="text-center">
   
 <main class="form-signin">
- {% if username.errors %}
-    <p>username not correct</p>
- {% endif %}
-  {% if password.errors %}
-    <p>password not correct</p>
-{% endif %}
+
 <form action="/login" method="post">
   {% csrf_token %}
   <img class="mb-4" src="/static/img/lg.png" alt="" width="300" height="300">
