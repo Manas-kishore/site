@@ -45,9 +45,20 @@ def contact(request):
         email = request.POST.get('email')
         phone = request.POST.get('phone')
         desc = request.POST.get('desc')
-        contact = Contact(name=name,email=email,phone=phone,desc=desc,date=datetime.today())
-        contact.save()
-        messages.success(request, 'Successfully Submitted!')
+        data = {
+                'name': name,
+                'email': email,
+                'phone': phone,
+                'desc': desc
+        }
+        messege = '''
+        New Messege: {}
+        From: {}
+        '''.format(data['messege'], data['email'])
+        send_mail('msenterprises(Tower Construction)', desc, '', ['msenterprises7143@gmail.com'])
+
+        messages.success(request, 'Your Message Has Been Sent!')
+
     return render(request , "contact.html")
 
 def req(request):
